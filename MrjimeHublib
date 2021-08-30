@@ -109,7 +109,7 @@ local function initLibrary()
 
         local gui = Instance.new("ScreenGui", CoreGui);
         gui.Enabled = false; 
-        gui.Name = "MrjimeHub":
+        gui.Name = "MrjimeHub";
         library.gui = gui;
 
         local main = library:Create("Frame", {
