@@ -91,7 +91,7 @@ local function LEBBG_fake_script() -- Intro.LocalScript
 	local script = Instance.new('LocalScript', Intro)
 
 	if _G.PmmKey == "Pmm>8jt7ygscii98q7b4r3klol" then
-	script.Parent.Blur:Clone().Parent = game.Lighting
+
 	script.Parent.TextLabel.TextTransparency = 1
 	script.Parent.Pmm.ImageTransparency = 1
 	script.Parent.vers.TextTransparency = 1
@@ -137,7 +137,7 @@ local function LEBBG_fake_script() -- Intro.LocalScript
 	script.Parent.vers.TextTransparency = 0
 	while script.Parent.Pmm.ImageTransparency do
 		wait(0)
-		game.Lighting.Blur.Size = game.Lighting.Blur.Size + 1
+	
 		script.Parent.Pmm.Rotation = script.Parent.Pmm.Rotation + 1
 	
 		if script.Parent.Pmm.Rotation == 360 then
@@ -188,7 +188,7 @@ local function LEBBG_fake_script() -- Intro.LocalScript
 			script.Parent.vers.TextTransparency = 1
 			
 			wait(3)
-			game.Lighting.Blur:Destroy()
+			
 			script.Parent.Parent.Intro:Destroy()
 		end
 		end
