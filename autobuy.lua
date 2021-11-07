@@ -1,3 +1,6 @@
+-- Gui to Lua
+-- Version: 3.2
+-- Instances:
 local themes = {
         SchemeColor = Color3.fromRGB(166, 71, 214),
         Background = Color3.fromRGB(64, 50, 71),
@@ -10,196 +13,20 @@ local themes = {
 end
 game.Workspace.Stores.WoodRUs.Parts.Sign.Sign.SKULLSIGN.Transparency = 0
 game.Workspace.Stores.WoodRUs.Parts.PREMIUMSELECTION.SurfaceGui.TextLabel.Text = "Pmm - Team Development"
-bc = BrickColor.new("Bright red")
-game.StarterGui:SetCore("ChatMakeSystemMessage", {
-	Text = "{Pmm - Team} Carregando.";
-	Font = Enum.Font.Cartoon;
-	Color = bc.Color;
-	FontSize = Enum.FontSize.Size96;	
-})
-wait(3)
-bu = BrickColor.new("Electric blue")
-game.StarterGui:SetCore("ChatMakeSystemMessage", {
-	Text = "{Pmm - Team} Carregado.";
-	Font = Enum.Font.Cartoon;
-	Color = bu.Color;
-	FontSize = Enum.FontSize.Size96;	
-})
-
--- Gui to Lua
--- Version: 3.2
-
--- Instances:
-
-local Intro = Instance.new("ScreenGui")
-local TextLabel = Instance.new("TextLabel")
-local Pmm = Instance.new("ImageButton")
-local UIGradient = Instance.new("UIGradient")
-local vers = Instance.new("TextLabel")
-
---Properties:
-
-Intro.Name = "Intro"
-Intro.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
-
-TextLabel.Parent = Intro
-TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel.BackgroundTransparency = 1.000
-TextLabel.Position = UDim2.new(0.424147904, 0, 0.320683122, 0)
-TextLabel.Size = UDim2.new(0, 221, 0, 62)
-TextLabel.Font = Enum.Font.GrenzeGotisch
-TextLabel.Text = "Pmm - Team"
-TextLabel.TextColor3 = Color3.fromRGB(0, 0, 0)
-TextLabel.TextScaled = true
-TextLabel.TextSize = 18.000
-TextLabel.TextTransparency = 1.000
-TextLabel.TextWrapped = true
-
-Pmm.Name = "Pmm"
-Pmm.Parent = Intro
-Pmm.BackgroundTransparency = 1.000
-Pmm.Position = UDim2.new(0.445813417, 0, 0.397533208, 0)
-Pmm.Size = UDim2.new(0, 147, 0, 138)
-Pmm.ZIndex = 2
-Pmm.Image = "rbxassetid://6764432293"
-Pmm.ImageColor3 = Color3.fromRGB(170, 255, 255)
-Pmm.ImageRectOffset = Vector2.new(700, 600)
-Pmm.ImageRectSize = Vector2.new(100, 100)
-Pmm.ImageTransparency = 1.000
-Pmm.ScaleType = Enum.ScaleType.Crop
-
-UIGradient.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(0, 255, 217)), ColorSequenceKeypoint.new(0.20, Color3.fromRGB(137, 0, 249)), ColorSequenceKeypoint.new(0.26, Color3.fromRGB(191, 0, 255)), ColorSequenceKeypoint.new(0.88, Color3.fromRGB(0, 179, 255)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(0, 255, 217))}
-UIGradient.Parent = Pmm
-
-vers.Name = "vers"
-vers.Parent = Intro
-vers.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-vers.BackgroundTransparency = 1.000
-vers.Position = UDim2.new(0.424147904, 0, 0.658444047, 0)
-vers.Size = UDim2.new(0, 221, 0, 62)
-vers.Font = Enum.Font.GrenzeGotisch
-vers.Text = "v1.3"
-vers.TextColor3 = Color3.fromRGB(0, 0, 0)
-vers.TextScaled = true
-vers.TextSize = 18.000
-vers.TextTransparency = 1.000
-vers.TextWrapped = true
-
--- Scripts:
-
-local function LEBBG_fake_script() -- Intro.LocalScript 
-	local script = Instance.new('LocalScript', Intro)
-
-	if _G.PmmKey == "Pmm>8jt7ygscii98q7b4r3klol" then
-
-	script.Parent.TextLabel.TextTransparency = 1
-	script.Parent.Pmm.ImageTransparency = 1
-	script.Parent.vers.TextTransparency = 1
-	wait(0)
-	script.Parent.TextLabel.TextTransparency = 0.9
-	script.Parent.Pmm.ImageTransparency = 0.9
-	script.Parent.vers.TextTransparency = 0.9
-	wait(0)
-	script.Parent.TextLabel.TextTransparency = 08
-	script.Parent.Pmm.ImageTransparency = 0.8
-	script.Parent.vers.TextTransparency = 0.8
-	wait(0)
-	script.Parent.TextLabel.TextTransparency = 0.7
-	script.Parent.Pmm.ImageTransparency = 0.7
-	script.Parent.vers.TextTransparency = 0.7
-	wait(0)
-	script.Parent.TextLabel.TextTransparency = 06
-	script.Parent.Pmm.ImageTransparency = 0.6
-	script.Parent.vers.TextTransparency = 0.6
-	wait(0)
-	script.Parent.TextLabel.TextTransparency = 0.5
-	script.Parent.Pmm.ImageTransparency = 0.5
-	script.Parent.vers.TextTransparency = 0.5
-	wait(0)
-	script.Parent.TextLabel.TextTransparency = 0.4
-	script.Parent.Pmm.ImageTransparency = 0.4
-	script.Parent.vers.TextTransparency = 0.4
-	wait(0)
-	script.Parent.TextLabel.TextTransparency = 0.3
-	script.Parent.Pmm.ImageTransparency = 0.3
-	script.Parent.vers.TextTransparency = 0.3
-	wait(0)
-	script.Parent.TextLabel.TextTransparency = 0.2
-	script.Parent.Pmm.ImageTransparency = 0.2
-	script.Parent.vers.TextTransparency = 0.2
-	wait(0)
-	script.Parent.TextLabel.TextTransparency = 0.1
-	script.Parent.Pmm.ImageTransparency = 0.1
-	script.Parent.vers.TextTransparency = 0.1
-	wait(0)
-	script.Parent.TextLabel.TextTransparency = 0
-	script.Parent.Pmm.ImageTransparency = 0
-	script.Parent.vers.TextTransparency = 0
-	while script.Parent.Pmm.ImageTransparency do
-		wait(0)
-	
-		script.Parent.Pmm.Rotation = script.Parent.Pmm.Rotation + 1
-	
-		if script.Parent.Pmm.Rotation == 360 then
-			wait(0)
-			script.Parent.TextLabel.TextTransparency = 0
-			script.Parent.Pmm.ImageTransparency = 0
-			script.Parent.vers.TextTransparency = 0
-			wait(0)
-			script.Parent.TextLabel.TextTransparency = 0.1
-			script.Parent.Pmm.ImageTransparency = 0.1
-			script.Parent.vers.TextTransparency = 0.1
-			wait(0)
-			script.Parent.TextLabel.TextTransparency = 0.2
-			script.Parent.Pmm.ImageTransparency = 0.2
-			script.Parent.vers.TextTransparency = 0.2
-			wait(0)
-			script.Parent.TextLabel.TextTransparency = 0.3
-			script.Parent.Pmm.ImageTransparency = 0.3
-			script.Parent.vers.TextTransparency = 0.3
-			wait(0)
-			script.Parent.TextLabel.TextTransparency = 0.4
-			script.Parent.Pmm.ImageTransparency = 0.4
-			script.Parent.vers.TextTransparency = 0.4
-			wait(0)
-			script.Parent.TextLabel.TextTransparency = 0.5
-			script.Parent.Pmm.ImageTransparency = 0.5
-			script.Parent.vers.TextTransparency = 0.5
-			wait(0)
-			script.Parent.TextLabel.TextTransparency = 0.6
-			script.Parent.Pmm.ImageTransparency = 0.6
-			script.Parent.vers.TextTransparency = 0.6
-			wait(0)
-			script.Parent.TextLabel.TextTransparency = 0.7
-			script.Parent.Pmm.ImageTransparency = 0.7
-			script.Parent.vers.TextTransparency = 0.7
-			wait(0)
-			script.Parent.TextLabel.TextTransparency = 0.8
-			script.Parent.Pmm.ImageTransparency = 0.8
-			script.Parent.vers.TextTransparency = 0.8
-			wait(0)
-	
-			script.Parent.TextLabel.TextTransparency = 0.9
-			script.Parent.vers.TextTransparency = 0.9
-			script.Parent.Pmm.ImageTransparency = 0.9
-			wait(0)
-			script.Parent.TextLabel.TextTransparency = 1
-			script.Parent.Pmm.ImageTransparency = 1
-			script.Parent.vers.TextTransparency = 1
-			
-			wait(3)
-			
-			script.Parent.Parent.Intro:Destroy()
-		end
-		end
-		end
-	
-end
-coroutine.wrap(LEBBG_fake_script)()
-wait(0.2)
 
 local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
-local Window = Library.CreateLib("Pmm - Team v1.3", themes)
+local Window = Library.CreateLib("Pmm - Team v1.3e", themes)
+  
+
+
+game:GetService("Players").LocalPlayer.PlayerGui.Scripts.SitPermissions.Disabled = true
+wait(1)
+game:GetService("StarterGui"):SetCore("SendNotification", {
+  Title = "Pmm - Team",
+  Text = "Auto Sit in Any Car (may break your cars)."
+})
+
+
 
     -- Pmm Main 
     local Main = Window:NewTab("Gui")
@@ -2933,8 +2760,3 @@ end)
 
 
 
-
-
-
-
---
