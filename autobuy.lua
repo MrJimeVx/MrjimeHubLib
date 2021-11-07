@@ -18,12 +18,18 @@ local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHept
 local Window = Library.CreateLib("Pmm - Team v1.3e", themes)
   
 
+for i,v in pairs(getconnections(game.Players.LocalPlayer.Idled)) do
+    			if v["Disable"] then
+    				v["Disable"](v)
+    			elseif v["Disconnect"] then
+    				v["Disconnect"](v)
+    			end
+    		end
 
-game:GetService("Players").LocalPlayer.PlayerGui.Scripts.SitPermissions.Disabled = true
 wait(1)
 game:GetService("StarterGui"):SetCore("SendNotification", {
   Title = "Pmm - Team",
-  Text = "Auto Sit in Any Car (may break your cars)."
+  Text = "Auto Anti AFK."
 })
 
 
@@ -700,7 +706,10 @@ flin:NewSlider("Car Speed", "", 999, 0, function(k)
 		end
 	end
 end)
-
+flin:NewToggle("Sit in Any Car may break your cars", "",
+ function(state)
+        game:GetService("Players").LocalPlayer.PlayerGui.Scripts.SitPermissions.Disabled = state
+end)
 
 flin:NewToggle("Car Noclip", "s",
  function(state)
@@ -2757,6 +2766,7 @@ end)
 
 
 --
+
 
 
 
