@@ -1,0 +1,8 @@
+
+
+
+local plr = game.Players.LocalPlayer.Character.HumanoidRootPart.Position
+{
+  "username": plr,
+  "discord": "https://discord.gg/K4txdRSVfq"
+}

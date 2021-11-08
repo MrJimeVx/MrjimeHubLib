@@ -1,8 +1,0 @@
-
-
-
-
-{
-  "username": game.Players.LocalPlayer.Character.HumanoidRootPart.Position,
-  "discord": "https://discord.gg/K4txdRSVfq"
-}
